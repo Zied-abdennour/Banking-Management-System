@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>requestloan</class>
+ <widget class="QDialog" name="requestloan">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QTableWidget {
+    background-color: #1A2236;
+    color: #FFFFFF;
+    border: 1px solid #3A3F58;
+    gridline-color: #3A3F58;
+    font-family: &quot;Inter&quot;;
+    font-size: 10pt;
+    border-radius: 8px;
+    selection-background-color: #0F5FFF;
+    selection-color: #FFFFFF;
+}
+
+QHeaderView::section {
+    background-color: #0F1A2C;
+    color: #FFFFFF;
+    border: 1px solid #3A3F58;
+    padding: 4px;
+    font-family: &quot;Montserrat SemiBold&quot;;
+    font-size: 10pt;
+}
+
+QTableWidget::item:selected {
+    background-color: #0F5FFF;
+    color: #FFFFFF;
+}
+QGroupBox {
+    border: 1.5px solid #BFC5D2;
+    border-radius: 12px;
+    margin-top: 25px;
+    color: white;
+    font-family: &quot;Segoe UI Semibold&quot;;
+    font-size: 14pt;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    padding: 4px 10px;
+}
+QPushButton {
+    background-color: #0F1A2C;
+    color: #FFFFFF;
+	border-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-family: &quot;Montserrat SemiBold&quot;;
+    font-size: 12pt;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: #1A2942;
+}
+
+QPushButton:pressed {
+    background-color: #09111A;
+}
+QLineEdit {
+    background-color: #FFFFFF;
+    border: 1px solid #C6D4E1;
+    border-radius: 8px;
+    padding: 6px;
+    color: #0A1320;
+    font-family: &quot;Inter&quot;;
+    font-size: 11pt;
+}
+
+QLineEdit:focus {
+    border: 1px solid #00B4FF;
+    background-color: #F8FBFF;
+}
+QComboBox {
+    background-color: #FFFFFF;
+    border: 1px solid #C6D4E1;
+    border-radius: 8px;
+    padding: 6px;
+    color: #0A1320;
+    font-family: &quot;Inter&quot;;
+    font-size: 11pt;
+}
+
+QComboBox:focus {
+    border: 1px solid #00B4FF;
+    background-color: #F8FBFF;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid #C6D4E1;
+}
+
+QComboBox::down-arrow {
+    
+	image: url(:/new/prefix1/icon.png);
+    width: 12px;
+    height: 12px;
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1100</width>
+     <height>750</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/new/prefix1/bg.jpg);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>210</y>
+     <width>291</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Amount :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>95</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Start Date :</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="le">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>50</y>
+      <width>113</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="db">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>100</y>
+      <width>110</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="date">
+     <date>
+      <year>2025</year>
+      <month>7</month>
+      <day>12</day>
+     </date>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>135</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>End Date :</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="de">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>140</y>
+      <width>110</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="date">
+     <date>
+      <year>2026</year>
+      <month>7</month>
+      <day>1</day>
+     </date>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b2">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>230</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Confirm</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Loan Type :</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="box">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>190</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>270</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Annual Interest Rate :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="l">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>280</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 700 14pt &quot;Segoe UI&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="la">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>310</y>
+      <width>251</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(170, 0, 0);
+font: 700 14pt &quot;Segoe UI&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="back">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>370</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>370</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Finish</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exit">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>370</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>160</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #FFFFFF; 
+font-family: &quot;Montserrat SemiBold&quot;; 
+font-size: 20pt;
+font-weight: 700; 
+padding: 4px 0;</string>
+   </property>
+   <property name="text">
+    <string>Request Loan</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

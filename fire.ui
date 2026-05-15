@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>fire</class>
+ <widget class="QDialog" name="fire">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QTableWidget {
+    background-color: #1A2236;
+    color: #FFFFFF;
+    border: 1px solid #3A3F58;
+    gridline-color: #3A3F58;
+    font-family: &quot;Inter&quot;;
+    font-size: 10pt;
+    border-radius: 8px;
+    selection-background-color: #0F5FFF;
+    selection-color: #FFFFFF;
+}
+
+QHeaderView::section {
+    background-color: #0F1A2C;
+    color: #FFFFFF;
+    border: 1px solid #3A3F58;
+    padding: 4px;
+    font-family: &quot;Montserrat SemiBold&quot;;
+    font-size: 10pt;
+}
+
+QTableWidget::item:selected {
+    background-color: #0F5FFF;
+    color: #FFFFFF;
+}
+QGroupBox {
+    border: 1.5px solid #BFC5D2;
+    border-radius: 12px;
+    margin-top: 25px;
+    color: white;
+    font-family: &quot;Segoe UI Semibold&quot;;
+    font-size: 14pt;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    padding: 4px 10px;
+}
+QPushButton {
+    background-color: #0F1A2C;
+    color: #FFFFFF;
+	border-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-family: &quot;Montserrat SemiBold&quot;;
+    font-size: 12pt;
+    padding: 6px 12px;
+}
+
+QPushButton:hover {
+    background-color: #1A2942;
+}
+
+QPushButton:pressed {
+    background-color: #09111A;
+}
+QLineEdit {
+    background-color: #FFFFFF;
+    border: 1px solid #C6D4E1;
+    border-radius: 8px;
+    padding: 6px;
+    color: #0A1320;
+    font-family: &quot;Inter&quot;;
+    font-size: 11pt;
+}
+
+QLineEdit:focus {
+    border: 1px solid #00B4FF;
+    background-color: #F8FBFF;
+}
+QComboBox {
+    background-color: #FFFFFF;
+    border: 1px solid #C6D4E1;
+    border-radius: 8px;
+    padding: 6px;
+    color: #0A1320;
+    font-family: &quot;Inter&quot;;
+    font-size: 11pt;
+}
+
+QComboBox:focus {
+    border: 1px solid #00B4FF;
+    background-color: #F8FBFF;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid #C6D4E1;
+}
+
+QComboBox::down-arrow {
+    
+	image: url(:/new/prefix1/icon.png);
+    width: 12px;
+    height: 12px;
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1100</width>
+     <height>750</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/new/prefix1/bg.jpg);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>160</y>
+     <width>291</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #FFFFFF; 
+font-family: &quot;Montserrat SemiBold&quot;; 
+font-size: 28pt;
+font-weight: 700; 
+padding: 4px 0;</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:22pt;&quot;&gt;Fire Employee&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>230</y>
+     <width>291</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>ID :</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exit">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>340</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="fire_2">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>110</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fire</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="back">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>340</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="le">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>70</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="box">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>130</y>
+      <width>231</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="l1">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>30</y>
+       <width>181</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);
+font: italic 9pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="yes">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Yes</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="no">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>100</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>No</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="l2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>280</y>
+      <width>251</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(170, 0, 0);
+font: 700 14pt &quot;Segoe UI&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
